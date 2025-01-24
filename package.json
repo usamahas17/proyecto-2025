@@ -1,0 +1,30 @@
+{
+  "name": "testeo",
+  "version": "1.0.0",
+  "description": "segunda apliacion node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "jst"
+  ],
+  "author": "hassan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.12.0",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.9",
+    "tslint": "^5.20.1",
+    "typescript": "^5.7.3"
+  }
+}
