@@ -1,8 +1,8 @@
 import express, {Application} from "express";
 import cors from "cors";
-import db from "../bd/conection";
+import db from "./bd/conection";
 import bodyparse from "body-parser";
-import rutasUsuario from '../rutas/usuario.ruta';
+import rutasUsuario from './rutas/usuario.ruta';
 
 
 class Server{
