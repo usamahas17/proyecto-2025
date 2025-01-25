@@ -1,4 +1,4 @@
-import Server from "./models/index";
+import Server from "./src/index";
 import dotenv from "dotenv";
 
 
