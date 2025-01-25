@@ -4,8 +4,8 @@
   "description": "segunda apliacion node.js",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "start": "dist/index.js"
-
   },
   "keywords": [
     "node",
