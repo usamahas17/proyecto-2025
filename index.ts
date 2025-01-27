@@ -34,11 +34,9 @@ class Server {
     }
 
     listen() {
-        this.app.listen(this.host,() =>{
-            console.log("el host corre en el puerto " + this.host);
-        })
-        this.app.listen(this.port, () => {
-            console.log("el servidor corre en el puero " + this.port);
+     
+        this.app.listen(parseInt(this.port),this.host, () => {
+            console.log("el servidor corre en el puero " + this.port +this.host);
         })
         
     }
