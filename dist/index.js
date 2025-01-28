@@ -24,6 +24,7 @@ class Server {
         };
         this.app = (0, express_1.default)();
         this.port = process.env.PORT || "9000";
+        this.host = ('RENDER' in process.env) ? '0.0.0.0' : 'localhost';
         this.middlewares();
         this.dbConnection();
         this.routes();
@@ -38,8 +39,8 @@ class Server {
         this.app.use(this.apiPaths.usuarios, usuario_ruta_1.default);
     }
     listen() {
-        this.app.listen(this.port, () => {
-            console.log("el servidor corre en el puero " + this.port);
+        this.app.listen(parseInt(this.port), this.host, () => {
+            console.log("el servidor corre en el puero " + this.port + this.host);
         });
     }
     dbConnection() {

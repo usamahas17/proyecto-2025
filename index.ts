@@ -35,7 +35,7 @@ class Server {
 
     listen() {
      
-        this.app.listen(parseInt(this.port),this.host, () => {
+        this.app.listen(parseInt(this.port), this.host ,() => {
             console.log("el servidor corre en el puero " + this.port +this.host);
         })
         
